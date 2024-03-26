@@ -14,11 +14,11 @@ public class Main {
         //Um solche unnötigen Wiederholungen von Quellcode zu vermeiden,
         //können wir Methoden verwenden
 
-        float d = calculateSum( 6.5f, 10.4f);
-        System.out.println(d);
+        float d = calculateSum( 5.2f, 3.6f);
+        printResult(d);
 
         float e = calculateSum( 34.5f, 17.4f);
-        System.out.println(e);
+        printResult(e);
 
     }
 
@@ -40,5 +40,15 @@ public class Main {
 
         return result; //zurückgeben von result mit return
     }
+
+    private static void printResult( float value ) //void bedeutet: keine Rückgabe
+    {
+        System.out.println("Ergebnis der Berechnung: " + value);
+    }
+
+
+
+
+
 
 }
